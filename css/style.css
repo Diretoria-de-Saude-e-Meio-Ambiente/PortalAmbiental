@@ -6,14 +6,14 @@
 
 @font-face {
     font-family: "annlieef-extrabold";
-    src: url("fontes/annlieef-extrabold.ttf") format("truetype");
+    src: url("../fonts/annlieef-extrabold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Comfortaa";
-    src: url("fontes/Comfortaa/Comfortaa-VariableFont_wght.ttf")
+    src: url("../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf")
         format("truetype");
     font-weight: normal;
     font-style: normal;
