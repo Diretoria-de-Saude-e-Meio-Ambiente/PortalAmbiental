@@ -1,17 +1,178 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-bs-theme="light">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="https://github.com/Max9th" />
         <title>Portal Ambiental</title>
-        <link rel="icon" href="img/logo.png" type="image/png" />
-        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/style.css?v=1.0" />
+        <link rel="icon" href="../img/logo.png" type="image/png" />
+        <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap/bootstrap-icons.css" />
+        <link rel="stylesheet" href="../css/style.css?v=2.0" />
     </head>
-    <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
+    <body class="bg-body text-body">
+        <header>
+            <nav class="navbar navbar-expand-lg px-3">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center">
+                        <img
+                            src="../img/logo.png"
+                            alt="DSMA Logo"
+                            style="height: 60px; margin-right: 10px"
+                        />
+                        <div class="logo-text">
+                            <strong class="logo-title">D.S.M.A.</strong><br />
+                            <div class="other-logo-text">
+                                Diretoria de Saúde e Meio Ambiente<br />
+                                Grêmio Estudantil do IFG campus Valparaíso
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainMenu"
+                        aria-controls="mainMenu"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        data-bs-theme="light"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainMenu">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li
+                                class="form-check form-switch d-flex align-items-center px-3"
+                            >
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="DarkModeSwitch"
+                                />
+                                <label
+                                    class="form-check-label ms-2"
+                                    for="DarkModeSwitch"
+                                    >Modo escuro</label
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="authpage.html"
+                                    >Admin auth</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="projetos/projetos.html"
+                                    >Nossos projetos</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre/sobre.html"
+                                    >Sobre</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato/contato.html"
+                                    >Entre em contato</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="square"></div>
+        <main>
+            <section>
+                <div>
+                    <label for="nome"
+                        >This ain't ready yet... quit snooping around our dev
+                        portal</label
+                    >
+                    <input type="text" id="nome" name="nome" />
+                </div>
+            </section>
+        </main>
+        <footer class="bg-dsma-green text-light p-4 mt-auto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <h5>D.S.M.A.</h5>
+                        <p>
+                            Diretoria de Saúde e Meio Ambiente<br />
+                            Grêmio Estudantil do Instituto Federal do Goiás
+                            campus Valparaíso
+                        </p>
+                    </div>
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <h6>Links Rápidos</h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="../../index.html" class="text-light"
+                                    >Home</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="../projetos/projetos.html"
+                                    class="text-light"
+                                    >Projetos</a
+                                >
+                            </li>
+                            <li>
+                                <a href="../sobre/sobre.html" class="text-light"
+                                    >Sobre</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="../contato/contato.html"
+                                    class="text-light"
+                                    >Contato</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h6>Contato</h6>
+                        <p>
+                            Email:
+                            <a
+                                href="mailto:gremio.ifgvalparaiso@gmail.com"
+                                class="text-light"
+                                >gremio.ifgvalparaiso@gmail.com</a
+                            >
+                        </p>
+                        <p>
+                            Instagram:
+                            <a
+                                href="https://www.instagram.com/gremio.ifgvalparaiso/"
+                                class="text-light"
+                                >gremio.ifgvalparaiso</a
+                            >
+                        </p>
+                    </div>
+                </div>
+                <hr />
+                <div class="text-center small">
+                    © 2025 D.S.M.A. Todos os direitos reservados. Este projeto
+                    está sob a licensa Creative Commons BY-NC 4.0..
+                </div>
+                <div class="text-center small">
+                    As imagens e logos contidas neste projeto podem seguir
+                    licensas diferentes.
+                </div>
+            </div>
+        </footer>
+        <script type="module" src="../firebase.js"></script>
+        <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+        <script type="module" src="../main.js"></script>
     </body>
 </html>

@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Diretoria-de-Saude-e-Meio-Ambiente/PortalAmbiental/issues"
   },
-  "homepage": "https://github.com/Diretoria-de-Saude-e-Meio-Ambiente/PortalAmbiental#readme"
+  "homepage": "https://github.com/Diretoria-de-Saude-e-Meio-Ambiente/PortalAmbiental#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3"
+  }
 }

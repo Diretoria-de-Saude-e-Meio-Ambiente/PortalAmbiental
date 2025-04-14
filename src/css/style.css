@@ -19,13 +19,19 @@
     font-style: normal;
 }
 
-body {
+html body {
     font-family: "Comfortaa", sans-serif;
-    background-color: #fff;
     color: #000;
     white-space: normal;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    height: 100%;
+
+}
+
+main  {
+    flex: 1 0 auto;
+    overflow: hidden;
 }
 
 .logo-text {
@@ -139,7 +145,7 @@ nav ul {
 }
 
 .contato {
-    height: 75vh;
+    height:50%;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -151,7 +157,7 @@ nav ul {
 }
 
 .contato img {
-   height: 100%
+   height: 512px;
 }
 
 @media (max-width: 900px) {
@@ -159,12 +165,12 @@ nav ul {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        padding: 40px 20px;
+        padding: 40px;
         text-align: center;
     }
     .contato img {
         display: block;
-       height: 50%
+        height: 512px;
     }
 }
 
@@ -175,6 +181,12 @@ nav ul {
 
 .bg-dsma-red-grad {
    background: linear-gradient(.5deg, #ffa949ff, #ff034dff);
+   background-color: white;
+   color: white;
+}
+
+.bg-dsma-green-grad {
+   background: linear-gradient(.5deg, #33a966ff, #67e26dff);
    background-color: white;
    color: white;
 }
@@ -191,4 +203,15 @@ nav ul {
 
 .grow-on-hover:hover {
     transform: scale(1.025);
+}
+
+.sobre-icon {
+    display: block;
+    width: 192px;
+}
+
+.greengradbk {
+    background: linear-gradient(.5deg, #33a966ff, #67e26dff);
+    background-color: white;
+    color: white;
 }

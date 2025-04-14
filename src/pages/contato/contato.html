@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-bs-theme="light">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,11 +7,12 @@
         <title>Portal Ambiental</title>
         <link rel="icon" href="../../img/logo.png" type="image/png" />
         <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="../../css/style.css?v=1.0" />
+        <link rel="stylesheet" href="../../css/bootstrap/bootstrap-icons.css" />
+        <link rel="stylesheet" href="../../css/style.css?v=2.0" />
     </head>
-    <body>
+    <body class="bg-body text-body d-flex flex-column min-vh-100">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+            <nav class="navbar navbar-expand-lg px-3">
                 <div class="container-fluid">
                     <div class="d-flex align-items-center">
                         <img
@@ -40,6 +41,20 @@
                     </button>
                     <div class="collapse navbar-collapse" id="mainMenu">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li
+                                class="form-check form-switch d-flex align-items-center px-3"
+                            >
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="DarkModeSwitch"
+                                />
+                                <label
+                                    class="form-check-label ms-2"
+                                    for="DarkModeSwitch"
+                                    >Modo escuro</label
+                                >
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../../index.html"
                                     >Home</a
@@ -72,18 +87,66 @@
         <main>
             <div class="square"></div>
             <section class="contato">
-                <div class="text-dark text-center text-md-start hero-text">
-                    <h2>Miguel Jorge Freitas de Oliveira</h2>
-                    <p>Diretor do D.S.M.A.</p>
-                    <h5>Telefone: +55 61 98555-6378</h5>
+                <div class="text-center text-md-start">
+                    <div>
+                        <h2>Miguel Jorge Freitas de Oliveira</h2>
+                        <p>Diretor da D.S.M.A.</p>
+                        <p>
+                            <i class="bi bi-telephone-fill"></i>
+                            Telefone: +55 61 98555-6378
+                        </p>
+                        <p>
+                            <i class="bi bi-instagram"></i>
+                            <a href="https://www.instagram.com/cynex34/"
+                                >Instagram: @cynex34</a
+                            >
+                        </p>
+                    </div>
                     <hr />
-                    <h2>Miguel Cecilio Valença Alves</h2>
-                    <p>Coordenador do D.S.M.A.</p>
-                    <h5>Telefone: +55 61 9598-2758</h5>
+                    <div>
+                        <h2>Miguel Cecilio Valença Alves</h2>
+                        <p>Coordenador da D.S.M.A.</p>
+                        <p>
+                            <i class="bi bi-telephone-fill"></i>
+                            Telefone: +55 61 9598-2758
+                        </p>
+                    </div>
                     <hr />
-                    <h2>Movimento de União Estudantil</h2>
-                    <p>Grêmio Estudantil - Orgão mãe</p>
-                    <h5>E-mail: gremio.ifgvalparaiso@gmail.com</h5>
+                    <div>
+                        <h2>Movimento de União Estudantil</h2>
+                        <p>Grêmio Estudantil - Orgão mãe</p>
+                        <p>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <a
+                                href="https://www.google.com/maps?q=IFG+Valparaíso"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-decoration-none ms-2"
+                            >
+                                Ver localização no Google Maps
+                            </a>
+                        </p>
+                        <p>
+                            <i class="bi bi-envelope-fill"></i>
+                            <a
+                                href="mailto:gremio.ifgvalparaiso@gmail.com"
+                                class="text-decoration-none ms-2"
+                            >
+                                gremio.ifgvalparaiso@gmail.com
+                            </a>
+                        </p>
+                        <p>
+                            <i class="bi bi-instagram"></i>
+                            <a
+                                href="https://www.instagram.com/gremio.ifgvalparaiso/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-decoration-none ms-2"
+                            >
+                                @gremio.ifgvalparaiso
+                            </a>
+                        </p>
+                    </div>
                 </div>
                 <img src="../../img/logo.png" alt="Logo" />
             </section>
@@ -161,6 +224,6 @@
         </footer>
         <script type="module" src="../../firebase.js"></script>
         <script src="../../js/bootstrap/bootstrap.bundle.min.js"></script>
-        <script type="module" src="../../js/main.js"></script>
+        <script type="module" src="../../main.js"></script>
     </body>
 </html>

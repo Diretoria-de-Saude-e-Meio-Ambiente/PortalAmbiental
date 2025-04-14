@@ -35,23 +35,31 @@ const auth = getAuth(app);
 // Initialize Realtime Database
 const db = getDatabase(app);
 
-signInAnonymously(auth)
-  .then(() => {
-    console.log("✅ Authenticated anonymously");
+// signInAnonymously(auth)
+//   .then(() => {
+//     console.log("✅ Authenticated anonymously");
 
-    // After login, write to the database
-    const dataRef = ref(database, "users/user1");
-    set(dataRef, {
-      name: "John Doe",
-      email: "john.doe@example.com",
-    })
-      .then(() => {
-        console.log("✅ Data written successfully");
-      })
-      .catch((error) => {
-        console.error("❌ Error writing data:", error);
-      });
-  })
-  .catch((error) => {
-    console.error("❌ Authentication failed:", error);
-  });
+//     // After login, write to the database
+//     const dataRef = ref(database, "users/user1");
+//     set(dataRef, {
+//       name: "John Doe",
+//       email: "john.doe@example.com",
+//     })
+//       .then(() => {
+//         console.log("✅ Data written successfully");
+//       })
+//       .catch((error) => {
+//         console.error("❌ Error writing data:", error);
+//       });
+//   })
+//   .catch((error) => {
+//     console.error("❌ Authentication failed:", error);
+//   });
+// const user = firebase.auth().currentUser;
+
+// if (user) {
+//   const uid = user.uid;
+//   console.log("User UID:", uid);
+// } else {
+//   console.log("No user is signed in.");
+// }

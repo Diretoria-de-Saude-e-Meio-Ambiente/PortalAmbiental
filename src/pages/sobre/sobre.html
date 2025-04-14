@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-bs-theme="light">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,11 +7,12 @@
         <title>Portal Ambiental</title>
         <link rel="icon" href="../../img/logo.png" type="image/png" />
         <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="../../css/style.css?v=1.0" />
+        <link rel="stylesheet" href="../../css/bootstrap/bootstrap-icons.css" />
+        <link rel="stylesheet" href="../../css/style.css?v=2.0" />
     </head>
-    <body>
+    <body class="bg-body text-body d-flex flex-column min-vh-100">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+            <nav class="navbar navbar-expand-lg px-3">
                 <div class="container-fluid">
                     <div class="d-flex align-items-center">
                         <img
@@ -40,6 +41,20 @@
                     </button>
                     <div class="collapse navbar-collapse" id="mainMenu">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li
+                                class="form-check form-switch d-flex align-items-center px-3"
+                            >
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="DarkModeSwitch"
+                                />
+                                <label
+                                    class="form-check-label ms-2"
+                                    for="DarkModeSwitch"
+                                    >Modo escuro</label
+                                >
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../../index.html"
                                     >Home</a
@@ -69,16 +84,45 @@
                 </div>
             </nav>
         </header>
+        <div class="square"></div>
         <main>
-            <div class="square"></div>
-            <section class="hero">
-                <div class="hero-content">
-                    <div class="text-dark text-center text-md-start">
-                        <h2>404</h2>
-                        <h2>Mais vazio que minha alma</h2>
-                        <h1>Essa página está EM DESENVOLVIMENTO<h1/>
+            <section>
+                <div
+                    class="d-flex flex-column align-items-center gap-3 position-relative z-index-1 py-5 px-lg-5"
+                >
+                    <img
+                        src="../../img/logo.png"
+                        alt="Logo"
+                        class="sobre-icon"
+                    />
+                    <div class="text-center">
+                        <h1>Sobre nós</h1>
+                        <p class="text-start">
+                            A Diretoria de Saúde e Meio Ambiente (D.S.M.A.) é o
+                            setor do Grêmio Estudantil responsável por
+                            propagar<br />
+                            a conscientização sobre questões ambientais e de
+                            saúde no <em>campus</em>.
+                        </p>
+                        <p>
+                            A D.S.M.A. foi estabelecida no dia 18 de abril de
+                            2018 por meio do Art. 15º do Estatuto do Grêmio
+                            Estudantil.
+                        </p>
+                        <h1>Diretores</h1>
+                        <p>
+                            Vitória Castro (2022 - NOUE) -> Miguel Cecílio (2024
+                            - MAUE) -> Miguel Jorge (2025 - MAUE)
+                        </p>
+                        <p>
+                            <a
+                                href="../contato/contato.html"
+                                class="text-decoration-none"
+                                >Falta alguém? Entre em contato e nos
+                                informe!</a
+                            >
+                        </p>
                     </div>
-                    <img src="../../img/logo.png" alt="Logo" class="hero-icon" />
                 </div>
             </section>
         </main>
@@ -89,36 +133,72 @@
                         <h5>D.S.M.A.</h5>
                         <p>
                             Diretoria de Saúde e Meio Ambiente<br />
-                            Grêmio Estudantil do Instituto Federal do Goiás campus Valparaíso
+                            Grêmio Estudantil do Instituto Federal do Goiás
+                            campus Valparaíso
                         </p>
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
                         <h6>Links Rápidos</h6>
                         <ul class="list-unstyled">
-                            <li><a href="../../index.html" class="text-light">Home</a></li>
-                            <li><a href="../projetos/projetos.html" class="text-light">Projetos</a></li>
-                            <li><a href="../sobre/sobre.html" class="text-light">Sobre</a></li>
-                            <li><a href="../contato/contato.html" class="text-light">Contato</a></li>
+                            <li>
+                                <a href="../../index.html" class="text-light"
+                                    >Home</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="../projetos/projetos.html"
+                                    class="text-light"
+                                    >Projetos</a
+                                >
+                            </li>
+                            <li>
+                                <a href="../sobre/sobre.html" class="text-light"
+                                    >Sobre</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="../contato/contato.html"
+                                    class="text-light"
+                                    >Contato</a
+                                >
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md-3">
                         <h6>Contato</h6>
-                        <p>Email: <a href="mailto:gremio.ifgvalparaiso@gmail.com" class="text-light">gremio.ifgvalparaiso@gmail.com</a></p>
-                        <p>Instagram: <a href="https://www.instagram.com/gremio.ifgvalparaiso/" class="text-light">gremio.ifgvalparaiso</a></p>
+                        <p>
+                            Email:
+                            <a
+                                href="mailto:gremio.ifgvalparaiso@gmail.com"
+                                class="text-light"
+                                >gremio.ifgvalparaiso@gmail.com</a
+                            >
+                        </p>
+                        <p>
+                            Instagram:
+                            <a
+                                href="https://www.instagram.com/gremio.ifgvalparaiso/"
+                                class="text-light"
+                                >gremio.ifgvalparaiso</a
+                            >
+                        </p>
                     </div>
                 </div>
                 <hr />
                 <div class="text-center small">
-                    © 2025 D.S.M.A. Todos os direitos reservados.
-                    Este projeto está sob a licensa Creative Commons BY-NC 4.0..
+                    © 2025 D.S.M.A. Todos os direitos reservados. Este projeto
+                    está sob a licensa Creative Commons BY-NC 4.0..
                 </div>
                 <div class="text-center small">
-                    As imagens e logos contidas neste projeto podem seguir licensas diferentes.
+                    As imagens e logos contidas neste projeto podem seguir
+                    licensas diferentes.
                 </div>
             </div>
         </footer>
         <script type="module" src="../../firebase.js"></script>
         <script src="../../js/bootstrap/bootstrap.bundle.min.js"></script>
-        <script type="module" src="../../js/main.js"></script>
+        <script type="module" src="../../main.js"></script>
     </body>
 </html>

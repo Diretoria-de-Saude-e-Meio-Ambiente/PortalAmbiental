@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-bs-theme="light">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,11 +7,12 @@
         <title>Portal Ambiental</title>
         <link rel="icon" href="img/logo.png" type="image/png">
         <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
-        <link rel="stylesheet" href="css/style.css?v=1.0"/>
+        <link rel="stylesheet" href="css/bootstrap/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/style.css?v=2.0"/>
     </head>
-    <body>
+    <body class="bg-body text-body">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+            <nav class="navbar navbar-expand-lg px-3">
               <div class="container-fluid">
                 <div class="d-flex align-items-center">
                   <img src="img/logo.png" alt="DSMA Logo" style="height: 60px; margin-right: 10px;" />
@@ -29,6 +30,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="mainMenu">
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="form-check form-switch d-flex align-items-center px-3">
+                        <input class="form-check-input" type="checkbox" id="DarkModeSwitch">
+                        <label class="form-check-label ms-2" for="DarkModeSwitch">Modo escuro</label>
+                      </li>
                     <li class="nav-item">
                       <a class="nav-link active" href="index.html">Home</a>
                     </li>
@@ -69,20 +74,19 @@
                     <p>D.S.M.A.</p>
                     <hr/>
                     <div class="p-4 fs-5" style="padding: 500px">
-                        <p>Nós temos como propósito promover a conscientização, o cuidado e o engajamento dos estudantes em temas fundamentais como saúde física, mental e preservação ambiental.</p>
-                        <p>Por meio de projetos, campanhas educativas e ações práticas, buscamos criar um ambiente escolar mais saudável, sustentável e acolhedor, incentivando hábitos de vida equilibrados, o respeito ao meio ambiente e a participação ativa dos estudantes na construção de uma escola mais consciente e responsável.</p>
+                        <p>Nós temos como propósito promover a conscientização, o cuidado e o engajamento dos estudantes em temas fundamentais como saúde física, mental e preservação ambiental.</p> <p>Por meio de projetos, campanhas educativas e ações práticas, buscamos criar um ambiente escolar mais saudável, sustentável e acolhedor, incentivando hábitos de vida equilibrados, o respeito ao meio ambiente e a participação ativa dos estudantes na construção de uma escola mais consciente e responsável.</p>
                         <p>A D.S.M.A. acredita que pequenas atitudes geram grandes mudanças — e que a transformação começa dentro do próprio ambiente escolar.</p>
+                        <p>Para isso, investimos fortemente em tecnologias sustentáveis e soluções inovadoras que auxiliam na preservação da natureza, integrando ferramentas digitais e automações ecológicas no nosso <em>campus</em></p>
                     </div>
                     <hr/>
                 </div>
-
             </section>
             <section class="destaques p-3">
                 <h1 class="text-center">Destaques e notícias</h1>
                 <div class="d-flex justify-content-center gap-3">
                     <div class="card bg-dsma-red-grad text-white rounded-4 p-3 grow-on-hover" style="width: 24rem;">
                     <div class="card-body">
-                    <h5 class="card-title text-center fs-4">Ninho de pássaro encontrado no campus</h5>
+                    <h5 class="card-title text-center fs-4">O Portal Ambiental está no ar!!</h5>
                     <p class="card-text text-center fs-6">A natureza é linda</p>
                     <div class="ratio ratio-1x1">
                         <img src="img/Nest.jpg" class="rounded-4 card-img-top object-fit-cover" alt="Imagem de um ninho encontrado numa árvore do IFG Campus Valparaíso">
@@ -137,6 +141,6 @@
         </footer>
         <script type="module" src="firebase.js"></script>
         <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
-        <script type="module" src="js/main.js"></script>
+        <script type="module" src="main.js"></script>
     </body>
 </html>
